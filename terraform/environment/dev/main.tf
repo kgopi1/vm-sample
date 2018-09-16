@@ -1,0 +1,16 @@
+module "layers" {
+  source = "../../modules/layers"
+  rgname = "${var.rgname}"
+  location = "${var.location}"
+  labvnetname = "${var.labvnetname}"
+  vnetaddspace = "${var.vnetaddspace}"
+  subnetname= "${var.subnetname}"
+  subnetaddspace = "${var.subnetaddspace}"
+  vm_hostname = "${var.vm_hostname}"
+  vm_size = "${var.vm_size}"
+  admin_username = "${var.admin_username}"
+  admin_password ="${var.admin_password}"
+  sgname = "${var.sgname}"
+  sgsku = "${var.sgsku}"
+  sgkind = "${var.sgkind}"
+}
